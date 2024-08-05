@@ -1,6 +1,7 @@
   #intro {
     display: flex;
     align-items: center;
+    padding: 2rem;
   }
   
   .intro-container {
@@ -25,6 +26,7 @@
   
   #what-i-do {
     text-align: center;
+    padding: 2rem;
   }
   
   .section-title {
@@ -40,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    max-width: 900px;
+    max-width: 800px;
   }
   
   .service-section {
@@ -48,7 +50,7 @@
     border-radius: 15px;
     border: 2px solid #f5a623;
     padding: 1.5rem;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -225,7 +227,7 @@
       }
 
       #soft-skills {
-        padding: 1rem;
+        padding: 2rem;
       }
     
       .soft-skills-text {
