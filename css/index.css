@@ -1,0 +1,231 @@
+  #intro {
+    display: flex;
+    align-items: center;
+  }
+  
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .intro-pic img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .intro-text {
+    flex: 2;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  #what-i-do {
+    text-align: center;
+  }
+  
+  .section-title {
+    font-family: 'Audiowide', sans-serif;
+    color: #ff4500;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+  }
+  
+  .what-i-do-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 900px;
+  }
+  
+  .service-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 2px solid #f5a623;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .subtitle {
+    font-family: 'Audiowide', sans-serif;
+    color: #ff4500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+  }
+  
+  .skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .skill-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .skill-icon img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .skill-icon:hover img {
+    transform: scale(1.2);
+    cursor: default;
+  }
+  
+  .skill-icon::after {
+    content: attr(data-skill);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    color: #ff4500;
+    border: 2px solid #f5a623;
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+    padding: 0.5rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    z-index: 100;
+  }
+  
+  .skill-icon:hover::after {
+    opacity: 1;
+  }
+  
+  button {
+    font-family: 'Audiowide', sans-serif;
+    background: none;
+    border: 2px solid #ff4500;
+    color: #ff4500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 2rem auto; 
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+    color: #1a1a2e;
+  }
+
+  #soft-skills {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-family: 'Audiowide', sans-serif;
+    color: #ff4500;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+  }
+  
+  .soft-skills-text {
+    margin-bottom: 2rem;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    font-family: 'Audiowide', sans-serif;
+    color: #f5a623;
+    text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+  
+  .skills-list .emoji {
+    margin-right: 0.5rem;
+  }
+  
+  .soft-skills-pic img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro-text {
+        flex: 1;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+    
+      .service-section {
+        padding: 1rem;
+      }
+    
+      .subtitle {
+        font-size: 1.25rem;
+      }
+    
+      .skills-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    
+      .skill-icon {
+        width: 30px;
+        height: 30px;
+      }
+    
+      .skill-icon img {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .skill-icon::after {
+        bottom: -35px;
+        font-size: 0.75rem;
+        padding: 0.25rem;
+        z-index: 100;
+      }
+    
+      .services-list {
+        font-size: 0.875rem;
+      }
+  }
