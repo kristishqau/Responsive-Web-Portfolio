@@ -1,12 +1,18 @@
 #education {
   position: relative;
-  padding: 2rem;
+  padding-bottom: 2rem; 
 }
 
 .intro-container {
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  flex-direction: column; 
+
+}
+
+.title{
+  margin-top: 1rem;
 }
 
 .intro-pic {
@@ -18,30 +24,16 @@
   border-radius: 15px;
 }
 
-.intro-text {
-  flex: 2;
-  margin-left: 2rem;
-}
-
 .intro-title {
   font-family: 'Audiowide', sans-serif;
   color: #f5a623;
   font-size: 1.5rem;
   margin-top: 0.5rem;
-  margin-bottom: 1rem; 
   background: linear-gradient(90deg, #f5a623, #ff8c00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
-}
-
-.intro-text p {
-  font-family: 'Audiowide', sans-serif;
-  color: #FF4500; 
-  font-size: 1rem;
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
-  line-height: 1.5;
 }
 
 .degree-container{
@@ -100,9 +92,8 @@
 .school-title {
   font-family: 'Audiowide', sans-serif;
   color: #f5a623;
-  font-size: 1.75rem;
-  margin: 0;
-  text-shadow:  0 0 5px rgba(245, 166, 35, 0.7);
+  font-size: 1.50rem;
+  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
 }
 
 button {
@@ -124,34 +115,29 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  #education {
-    position: relative;
-    padding: 1rem; 
+  .text{
+    margin: 0;
   }
 
   .intro-container {
     flex-direction: column; 
-    margin-bottom: 3rem; 
+    margin-bottom: 2rem; 
+    display: flex;
+    text-align: center;
   }
 
-  .intro-pic, .intro-text {
+  .intro-pic{
     flex: 1;
     margin: 0; 
+    width: 350px;
   }
-
-  .intro-text p {
-    font-size: 0.85rem; 
-    line-height: 1.4; 
-    margin-top: 0.5rem; 
-    margin-bottom: 1rem; 
+  
+  .title{
+    margin-top: 0;
   }
 
   .intro-title {
     font-size: 1.25rem; 
-  }
-
-  .intro-text p {
-    font-size: 0.9rem;
   }
 
   .degree-container, .certification-container {

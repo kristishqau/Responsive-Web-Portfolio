@@ -1,9 +1,14 @@
 #projects {
   position: relative;
+  padding-bottom: 2rem; 
 }
 
 .text{
   margin-bottom: 4rem;
+}
+
+.title{
+  margin-top: 1rem;
 }
 
 .color-container {
@@ -39,7 +44,7 @@
 }
 
 .project-title {
-  margin: 1rem;
+  margin-bottom: 1rem;
   color: #FF4500;
   font-family: 'Audiowide', sans-serif;
   text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
@@ -144,5 +149,13 @@
 @media screen and (max-width: 768px) {
   .special-note {
     font-size: 1rem; 
+  }
+
+  .project-title{
+    font-size: larger;
+  }
+
+  .title{
+    margin-top: 0;
   }
 }

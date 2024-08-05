@@ -119,10 +119,13 @@ nav {
   font-family: 'Audiowide', sans-serif;
   color: #f5a623;
   font-size: 2rem;
-  margin-left: 1rem;
   position: relative;
-  animation: rocketLaunch 2s infinite;
   text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+}
+
+.logo {
+  margin-left: 1rem;
+  animation: rocketLaunch 2s infinite;
 }
 
 @keyframes rocketLaunch {
@@ -286,13 +289,8 @@ nav {
   max-height: 300px;
 }
 
-main {
-  flex: 1;
-}
-
 #main-content {
   flex: 1; 
-  padding: 2rem; 
   background: linear-gradient(135deg, #1a1a2e 0%, #162447 50%, #0f3460 100%);
 }
 

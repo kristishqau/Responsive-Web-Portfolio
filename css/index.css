@@ -31,7 +31,7 @@
     font-family: 'Audiowide', sans-serif;
     color: #ff4500;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
   }
   
@@ -143,14 +143,6 @@
     text-align: center;
   }
   
-  .section-title {
-    font-family: 'Audiowide', sans-serif;
-    color: #ff4500;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
-  }
-  
   .soft-skills-text {
     margin-bottom: 2rem;
   }
@@ -179,6 +171,9 @@
     .intro-container {
         flex-direction: column;
         align-items: center;
+        display: flex;
+        gap: 2rem;
+        text-align: center;
       }
 
       .intro-text {
@@ -227,5 +222,25 @@
     
       .services-list {
         font-size: 0.875rem;
+      }
+
+      #soft-skills {
+        padding: 1rem;
+      }
+    
+      .soft-skills-text {
+        margin-bottom: 1rem;
+      }
+    
+      .skills-list {
+        font-size: 1rem;
+      }
+    
+      .skills-list .emoji {
+        margin-right: 0.25rem;
+      }
+    
+      .soft-skills-pic img {
+        border-radius: 10px;
       }
   }

@@ -60,14 +60,6 @@
     font-size: 2rem;
   }
 
-  .intro-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-    align-items: center;
-  }
-
   .intro-text {
     text-align: center; 
     flex: 2;
