@@ -1,10 +1,7 @@
 #contact {
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 1rem;
+  position: relative;
+  padding: 1rem;
 }
 
 .contact-container {
@@ -13,11 +10,12 @@
   align-items: center; 
   gap: 2rem; 
   text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+  flex-direction: row;
 }
 
 .contact-image img {
-  width: 400px;
-  height: 400px; 
+  max-width: fit-content;
+  height: auto; 
   border-radius: 10px;
 }
 
@@ -52,4 +50,34 @@
   text-align: center;
   color: #FF4500;
   margin: 1rem 0; 
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .contact-image img {
+    width: 100%; 
+    max-width: none; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume-container {
+    flex-direction: column; 
+    gap: 0.5rem;
+    margin: 1rem 0; 
+  }
+
+  .resume-container a {
+    width: 100%; 
+    text-align: center; 
+  }
 }

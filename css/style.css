@@ -111,7 +111,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+  text-shadow: 0 0 3px rgba(245, 166, 35, 0.5);
 }
 
 .title,
@@ -120,11 +120,12 @@ nav {
   color: #f5a623;
   font-size: 2rem;
   position: relative;
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+  text-shadow: 0 0 3px rgba(245, 166, 35, 0.5);
 }
 
 .logo {
   margin-left: 1rem;
+  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
   animation: rocketLaunch 2s infinite;
 }
 

@@ -33,7 +33,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
+  text-shadow: 0 0 3px rgba(245, 166, 35, 0.5);
 }
 
 .degree-container{
