@@ -49,6 +49,9 @@
     backdrop-filter: blur(10px);
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 800px;
   }
   
   .service-section:hover {
