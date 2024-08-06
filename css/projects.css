@@ -47,7 +47,6 @@
   margin-bottom: 1rem;
   color: #FF4500;
   font-family: 'Audiowide', sans-serif;
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
 }
 
 .project-btn {
@@ -95,7 +94,6 @@
   font-size: 1.5rem;
   text-align: center;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
   backdrop-filter: blur(10px);
   transition: transform 0.3s, box-shadow 0.3s;
 }

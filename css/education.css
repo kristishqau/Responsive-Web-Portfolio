@@ -52,7 +52,6 @@
   color: #f5a623;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
   text-align: center;
 }
 
@@ -79,7 +78,6 @@
   color: #ff4500;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
 }
 
 .school-name {
@@ -93,7 +91,6 @@
   font-family: 'Audiowide', sans-serif;
   color: #f5a623;
   font-size: 1.50rem;
-  text-shadow: 0 0 5px rgba(245, 166, 35, 0.7);
 }
 
 button {
