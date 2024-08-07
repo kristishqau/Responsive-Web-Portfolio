@@ -25,3 +25,27 @@ function showSlides(n) {
     }
     slides[n].classList.add('active');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const skillIcons = document.querySelectorAll('.skill-icon');
+  
+    skillIcons.forEach(icon => {
+      icon.addEventListener('click', (event) => {
+        event.stopPropagation();
+        skillIcons.forEach(icon => icon.classList.remove('show-tooltip'));
+        icon.classList.add('show-tooltip');
+      });
+  
+      icon.addEventListener('mouseenter', () => {
+        icon.classList.add('show-tooltip');
+      });
+  
+      icon.addEventListener('mouseleave', () => {
+        icon.classList.remove('show-tooltip');
+      });
+    });
+  
+    document.addEventListener('click', () => {
+      skillIcons.forEach(icon => icon.classList.remove('show-tooltip'));
+    });
+  });  
