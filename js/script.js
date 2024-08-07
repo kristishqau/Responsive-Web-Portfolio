@@ -25,23 +25,3 @@ function showSlides(n) {
     }
     slides[n].classList.add('active');
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const skillIcons = document.querySelectorAll('.skill-icon');
-    
-    skillIcons.forEach(icon => {
-      icon.addEventListener('touchstart', (event) => {
-        event.preventDefault();
-        skillIcons.forEach(item => {
-          if (item !== icon) item.classList.remove('active');
-        });
-        icon.classList.toggle('active');
-      });
-    });
-  
-    document.addEventListener('touchstart', (event) => {
-      if (!event.target.closest('.skill-icon')) {
-        skillIcons.forEach(icon => icon.classList.remove('active'));
-      }
-    });
-  });
