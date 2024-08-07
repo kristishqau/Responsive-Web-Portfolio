@@ -97,6 +97,7 @@
 }
 
 .skill-name {
+  display: none;
   position: absolute;
   bottom: -45px;
   left: 50%;
@@ -114,8 +115,13 @@
   z-index: 100;
 }
 
-.skill-icon:hover .skill-name,
-.skill-icon.show-tooltip .skill-name {
+.skill-icon.active .skill-name {
+  display: block;
+  opacity: 1;
+}
+
+.skill-icon:hover .skill-name {
+  display: block;
   opacity: 1;
 }
   

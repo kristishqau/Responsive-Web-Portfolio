@@ -28,30 +28,20 @@ function showSlides(n) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const skillIcons = document.querySelectorAll('.skill-icon');
-  
-    const removeTooltip = () => {
-      skillIcons.forEach(icon => icon.classList.remove('show-tooltip'));
-    };
-  
+    
     skillIcons.forEach(icon => {
-      icon.addEventListener('mouseenter', () => {
-        icon.classList.add('show-tooltip');
-      });
-  
-      icon.addEventListener('mouseleave', () => {
-        icon.classList.remove('show-tooltip');
-      });
-  
       icon.addEventListener('touchstart', (event) => {
-        event.stopPropagation();
-        removeTooltip();
-        icon.classList.add('show-tooltip');
+        event.preventDefault();
+        skillIcons.forEach(item => {
+          if (item !== icon) item.classList.remove('active');
+        });
+        icon.classList.toggle('active');
       });
     });
   
     document.addEventListener('touchstart', (event) => {
       if (!event.target.closest('.skill-icon')) {
-        removeTooltip();
+        skillIcons.forEach(icon => icon.classList.remove('active'));
       }
     });
-  });  
+  });
