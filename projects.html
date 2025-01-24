@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="../assets/ChralshWebIcon.png">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/mediaqueries.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/projects.css" />
 </head>
 <body>
@@ -46,7 +47,7 @@
             <h1 class="title">Projects</h1>
             <p class="text">
                 Below you will find a selection of key projects that highlight my skills and experience.  
-                My portfolio website, where these pages are hosted, demonstrates the breadth of my work and commitment to continuous learning. 
+                My <a class="text" target="_blank" href="https://github.com/kristishqau/Responsive-Web-Portfolio">Portfolio Website</a>, where these pages are hosted, demonstrates the breadth of my work and commitment to continuous learning. 
                 Explore my projects to see how I've applied my expertise in various domains, from building robust web applications to implementing advanced machine learning techniques. 
             </p>
             <div class="projects-container">
@@ -56,9 +57,11 @@
                         <img src="../assets/API1.JPG" alt="Project 1" class="project-img" />
                     </div>
                     <p class="services-list">
-                        🚀 Streamlined and automated employees, tasks and projects management through a RESTful API.<br>
-                        🚀 Implemented JWT authentication, role-based access, and features like profile/task management and project assignment.<br>
-                        🚀 Utilized Class Library models with validation annotations and Dependency Injection for Controllers, Services, and Models with DTOs.
+                        <ul class="services-list">
+                        <li><i class="fas fa-project-diagram"></i> Streamlined and automated employees, tasks, and project management through a RESTful API.</li>
+                        <li><i class="fas fa-shield-alt"></i> Implemented JWT authentication, role-based access, and features like profile/task management and project assignment.</li>
+                        <li><i class="fas fa-cogs"></i> Utilized Class Library models with validation annotations and Dependency Injection for Controllers, Services, and Models with DTOs.</li>
+                        </ul>
                     </p>
                     <button class="btn project-btn" onclick="window.open('https://github.com/kristishqau/ASP.NET_Web_API')">Find Out More on GitHub</button>
                 </div>
@@ -80,23 +83,41 @@
                         <a class="next" onclick="changeSlide(1)">&#10095;</a>
                     </div>
                     <p class="services-list">
-                        🚀 Designed to create and manage a blog platform with robust content management capabilities.<br>
-                        🚀 Includes Microsoft Identity authentication, role-based access, post creation/editing, asynchronous comments, category filtering, and Excel export.<br>
-                        🚀 Features signup/login, Admin/Editor dashboards, predefined categories, and keyword search.
+                        <ul class="services-list">
+                            <li><i class="fas fa-blog"></i> Designed to create and manage a blog platform with robust content management capabilities.</li>
+                            <li><i class="fas fa-user-shield"></i> Includes Microsoft Identity authentication, role-based access, post creation/editing, asynchronous comments, category filtering, and Excel export.</li>
+                            <li><i class="fas fa-users-cog"></i> Features signup/login, Admin/Editor dashboards, predefined categories, and keyword search.</li>
+                          </ul>
                     </p>                    
                     <button class="btn project-btn" onclick="window.open('https://github.com/kristishqau/MVC_Web_App')">Find Out More on GitHub</button>
                 </div>
                 <div class="project-item color-container">
-                    <h2 class="project-title">Sentiment Analysis with NLP & Machine Learning</h2>
+                    <h2 class="project-title">Sentiment Analysis with Machine Learning using NLP</h2>
                     <div class="project-img-container">
                         <img src="../assets/output.JPG" alt="Project 3" class="project-img" />
                     </div>
                     <p class="services-list">
-                        🚀 Classified tweets into four sentiment categories using NLP techniques and machine learning models.<br>
-                        🚀 Included data preprocessing (tokenization, lemmatization), vectorization (TF-IDF, Countvectorizer), and various machine learning models.<br>
-                        🚀 Evaluated models with metrics like accuracy, precision, recall, F1 score, and ROC AUC, and visualized results with word clouds and bar plots.
+                        <ul class="services-list">
+                            <li><i class="fas fa-comments"></i> Classified tweets into four sentiment categories using NLP techniques and machine learning models.</li>
+                            <li><i class="fas fa-tasks"></i> Included data preprocessing (tokenization, lemmatization), vectorization (TF-IDF, Countvectorizer), and various machine learning models.</li>
+                            <li><i class="fas fa-chart-bar"></i> Evaluated models with metrics like accuracy, precision, recall, F1 score, and ROC AUC, and visualized results with word clouds and bar plots.</li>
+                          </ul>
                     </p>
                     <button class="btn project-btn" onclick="window.open('https://github.com/kristishqau/SentimentAnalysis_NLP')">Find Out More on GitHub</button>
+                </div>
+                <div class="project-item color-container">
+                    <h2 class="project-title">FinTech Dashboard Web App with React and .NET API</h2>
+                    <div class="project-img-container">
+                        <img src="../assets/FintechHomePage.JPG" alt="Project 5" class="project-img" />
+                    </div>
+                    <p class="services-list">
+                        <ul class="services-list">
+                            <li><i class="fas fa-chart-line"></i> Developed a responsive React .NET web app for analyzing financial data, including company profiles and financial statements.</li>
+                            <li><i class="fas fa-chart-pie"></i> Integrated interactive charts and dynamic data rendering to visualize income statements, balance sheets, and cash flow.</li>
+                            <li><i class="fas fa-users"></i> Provided seamless navigation and user-friendly interface for exploring historical dividends and financial metrics.</li>
+                          </ul>
+                    </p>                    
+                    <button class="btn project-btn" onclick="window.open('https://github.com/kristishqau/FinTech-React-.NET-Web-App/tree/main/frontend')">Find Out More on GitHub</button>
                 </div>
                 <div class="special-note">
                     More projects on the way... Stay tuned for updates!
@@ -105,7 +126,7 @@
         </section>
     </main>
     <footer class="footer">
-        Powered by ☕ and code
+        Powered by <i class="fas fa-coffee"></i> and <i class="fas fa-code"></i>
     </footer>
 
     <script src="../js/script.js"></script>

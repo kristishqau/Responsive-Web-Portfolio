@@ -332,7 +332,7 @@ section {
 
 footer {
   font-family: 'Audiowide', sans-serif;
-  color: #FF4500;
+  color: #00c8ff;
   position: flex; 
   left: 0;
   bottom: 0;
@@ -341,7 +341,7 @@ footer {
   padding: 1rem;
   text-align: center;
   z-index: 100; 
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
+  text-shadow: 0 0 5px rgba(0, 247, 255, 0.361);
   border-top: 2px solid #00CED1;
   box-shadow: 0 2px 10px rgba(0, 206, 209, 0.5); 
 }
